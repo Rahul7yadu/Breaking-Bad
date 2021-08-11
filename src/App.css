@@ -1,0 +1,28 @@
+body {
+  
+background:#121212;
+font-style: oblique;
+color:white;
+}
+.App{
+display:flex;
+
+
+}
+.side {
+  height:80%;
+  margin-left: 2em;
+  position: fixed;
+  float:right;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+@media(max-width:900px){
+.side{
+width:40%;
+
+}
+}
+  

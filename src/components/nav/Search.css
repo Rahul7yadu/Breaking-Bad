@@ -1,0 +1,31 @@
+.button{
+    margin:10px;
+    font-size: 1.1em;
+    padding:6px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main{
+    width: 75%;
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    }
+    
+.search input{
+margin:2px;
+border-radius: 5px 5px;    
+font-size:1.5em;
+height:90%;
+width: 100%;
+ }
+
+ .search input:focus{
+border:2px solid  white;
+box-shadow: 2px 2px 2px white;
+
+
+ }
+
+    

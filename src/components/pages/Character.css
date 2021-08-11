@@ -1,0 +1,47 @@
+::-webkit-scrollbar{
+  display:none;
+}
+
+.card {
+  font-size:1.2em;
+  overflow:scroll;
+
+  display:flex;
+  cursor: pointer;
+  background-color: transparent;
+  width:100%;
+  height:600px;
+  border: 2px double rgba(50, 230, 74, 0.808);
+  width:auto;
+
+}
+.details{
+  height:50%;
+  margin-left:5%
+}
+.card:hover{
+
+
+transition:all 0.2s ease-out 0.01s;
+box-shadow: 8px 8px 10px #29722d;
+
+}
+
+.details span{
+  padding:1em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#00FF00;
+}
+.line{
+
+width:100%;
+height:6px;
+background:#29722d;
+
+}
+.quotes{
+margin:5%;
+
+
+}

@@ -1,0 +1,6 @@
+.quotes{
+    height:20px;
+    width:20px;
+    overflow: scroll;
+    font-size: 10px;
+}
