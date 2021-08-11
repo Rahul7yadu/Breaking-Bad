@@ -16,7 +16,7 @@ const Footer = () => {
       </span>
       <div className="iconContainer">
         <a href="https://www.github.com/Rahul7yadu/" target="__blank">
-          <i class="fa fa-github fa-3x"></i>
+          <i className="fa fa-github fa-3x"></i>
         </a>
        
       </div>

@@ -1,47 +1,44 @@
-::-webkit-scrollbar{
-  display:none;
+::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
-  font-size:1.2em;
-  overflow:scroll;
-
-  display:flex;
+  font-size: 1.2em;
+  display: flex;
   cursor: pointer;
   background-color: transparent;
-  width:100%;
-  height:600px;
+  width: 100%;
+  height: 100%;
   border: 2px double rgba(50, 230, 74, 0.808);
-  width:auto;
-
+  width: auto;
 }
-.details{
-  height:50%;
-  margin-left:5%
+.details {
+  height: 50%;
+  margin-left: 5%;
 }
-.card:hover{
-
-
-transition:all 0.2s ease-out 0.01s;
-box-shadow: 8px 8px 10px #29722d;
-
+.card:hover {
+  transition: all 0.2s ease-out 0.01s;
+  box-shadow: 8px 8px 10px #29722d;
 }
 
-.details span{
-  padding:1em;
+.details span {
+  padding: 1em;
   font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color:#00FF00;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #00ff00;
 }
-.line{
-
-width:100%;
-height:6px;
-background:#29722d;
-
+.line {
+  width: 100%;
+  height: 6px;
+  background: #29722d;
 }
-.quotes{
-margin:5%;
+.quotes {
+  margin: 5%;
+}
 
-
+.centerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }

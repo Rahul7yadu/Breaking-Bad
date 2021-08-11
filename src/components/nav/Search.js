@@ -8,15 +8,29 @@ const Search = ({ setQuery }) => {
       <div className="search">
         <input
           onChange={(e) => setSearchedItem(e.target.value)}
-          placeholder = "Enter character name"           
-          value = {searchedItem}
-          
-          
+          placeholder="Enter character name"
+          value={searchedItem}
         />
       </div>
-      <div className="button">
-        <button onClick={() => {setQuery();setSearchedItem('')}}><i className = 'fa fa-refresh fa-2x'></i></button>
-        <button onClick={() => {setQuery(searchedItem);}} > <i className= 'fa fa-search fa-2x'></i></button>
+      <div className = 'buttonContainer'>
+        <button
+          onClick={() => {
+            setQuery();
+            setSearchedItem("");
+          }}
+className="button"
+        >
+          <i className="fa fa-refresh fa-2x"></i>
+        </button>
+        <button
+          onClick={() => {
+            setQuery(searchedItem);
+          }}
+          className="button"
+        >
+          {" "}
+          <i className="fa fa-search fa-2x"></i>
+        </button>
       </div>
     </div>
   );

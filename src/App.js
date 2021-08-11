@@ -5,25 +5,31 @@ import Search from "./components/nav/Search";
 import { useEffect, useState } from "react";
 import Header from "./components/header/Header";
 import Results from "./components/pages/Results";
-import Footer from './components/Footer/Footer'
+
+import Footer from "./components/Footer/Footer";
 function App() {
-  // const [posts , setPosts] = useState();
+
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostPerPage] = useState(10);
+  const [postsPerPage] = useState(10);
   const [items, setItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [query, setQuery] = useState("");
-  console.log(currentPage);
+
   useEffect(() => {
     const getData = async () => {
       const response = await fetch(
-        `https://www.breakingbadapi.com/api/characters${query ? `?name=${query}` : ""}`
+        `https://www.breakingbadapi.com/api/characters${
+          query ? `?name=${query}` : ""
+        }`
       );
       const data = await response.json();
-      console.log(data);
       setItems(data);
+      setIsLoading(false);
+      
     };
+
     getData();
-  }, [query, currentPage]);
+  }, [query]);
 
   const paginateNext = () => {
     if (currentPage < items.length / postsPerPage) {
@@ -41,21 +47,21 @@ function App() {
   const currentPost = items.slice(indexOfFirstPost, indexOfLastPost);
 
   return (
-    <>
-    <div className = 'App'>
+    <div>
+      <div className="App">
         <div className="side">
           <Header></Header>
-          <Search setQuery={setQuery} className="item1"></Search>
+          <Search setQuery={setQuery}></Search>
           <Nav
             currentPage={currentPage}
             paginateNext={paginateNext}
             paginateBack={paginateBack}
           ></Nav>
         </div>
-        <Results items={currentPost}></Results>
-        </div>
-      <Footer></Footer>
-    </>
+        <Results items={currentPost} />
+      </div>
+      {!isLoading ? <Footer /> : null}
+    </div>
   );
 }
 

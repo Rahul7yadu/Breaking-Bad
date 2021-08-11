@@ -1,28 +1,41 @@
 body {
-  
-background:#121212;
-font-style: oblique;
-color:white;
+  width:100%;
+  background: #121212;
+  font-style: oblique;
+  color: white;
 }
-.App{
-display:flex;
-
-
+.App {
+  display: flex;
 }
 .side {
-  height:80%;
+  height: 80%;
   margin-left: 2em;
+  margin-top:5%;
   position: fixed;
-  float:right;
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-@media(max-width:900px){
-.side{
-width:40%;
 
-}
-}
+
+@media (max-width: 400px) {
+  .side {
+    height:100px;
+    width:100%;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    justify-content: space-evenly;
+  }
+  .App {
+    margin-top: 50px;
+    width:900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
   
+}
