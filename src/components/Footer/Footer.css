@@ -24,3 +24,9 @@ a {
   align-items: center;
   justify-content: space-evenly;
 }
+@media(max-width:400px){
+.footer{
+  width:900px;
+}
+
+}

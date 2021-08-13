@@ -29,11 +29,15 @@ button:hover {
 @media (max-width: 400px) {
   .navButton {
       margin:0;
+      width:100px;
 
   }
   .page-number {
+    text-align:center;
+    font-weight:bold;
+    font-size:2em;
     width: 33%;
-    height: 33%;
+    height: 50%;
     margin: 3px;
   }
   .nav{
