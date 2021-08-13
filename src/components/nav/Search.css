@@ -29,7 +29,7 @@
   border: 2px solid white;
   box-shadow: 2px 2px 2px white;
 }
-@media (width: 360px) {
+@media (max-width: 400px) {
   .main {
     width: 33%;
   }
@@ -37,5 +37,9 @@
     width: auto;
     height: auto;
     max-height: 50px;
+  }
+  .search input{
+
+    height:60px;
   }
 }

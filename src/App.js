@@ -47,7 +47,7 @@ function App() {
   const currentPost = items.slice(indexOfFirstPost, indexOfLastPost);
 
   return (
-    <div>
+    <div className = 'container'>
       <div className="App">
         <div className="side">
           <Header></Header>
@@ -59,8 +59,8 @@ function App() {
           ></Nav>
         </div>
         <Results items={currentPost} />
-      </div>
-      {!isLoading ? <Footer /> : null}
+        </div>
+        {!isLoading ? <Footer /> : null}
     </div>
   );
 }
